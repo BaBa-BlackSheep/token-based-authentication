@@ -1,0 +1,30 @@
+GET  http://127.0.0.1:3000/
+
+###
+
+POST http://127.0.0.1:4000/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password":"admin"
+}
+###
+GET  http://127.0.0.1:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzE5MzgyMjY2LCJleHAiOjE3MTkzODIzMjF9.BEsibGz0l01K_6W_mrU7hBVF1JXp7jIEfB0iDzRmhN4
+
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzE5MzgxNTgwLCJleHAiOjE3MTkzODE2MzV9.kbpz1aIiCjmV5O5g7rU_Vkx94jyZ9vi30vBcoUqzI0o",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzE5MzgxNTgwfQ.Nlt9brT3S6-OQFuU2kUJxGqtvZp_Xx8l4Ns-eU2ubZE"
+
+###
+POST  http://127.0.0.1:4000/token  
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzE5MzAyMzI2fQ.9MrQ81vq0u5KdVHCdL_E7soiNfvQ0sDILKmNlnuMLvs"
+}
+###
+GET http://127.0.0.1:4000/ping
+###
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzE5MzAyMzI2fSwiaWF0IjoxNzE5MzAyMzg3LCJleHAiOjE3MTkzMDI0NDJ9.GxailxBCWOmEGmA38BpbHSVL2LKoAwBZ8hHTiDoyjkc
